@@ -6,15 +6,15 @@ engine manager and supervised components.
 
 ## Structural center
 
-`ethos/interface.ethos` is the component-owned textual projection of one
+`ethos/signal.ethos` is the component-owned textual projection of one
 authority-approved encoded Interface transaction. `src/bootstrap_manifest.rs`
 holds its already-minted identity seats and canonical order. The build boundary
 assembles that exact transaction, revalidates it through Core Nomos, lowers it
 to Whole Logos, and asks Rust Logos for the checked Rust projection in
-`src/schema/lib/generated.rs`.
+`src/generated/signal.rs`.
 
 ```text
-ethos/interface.ethos + bootstrap_manifest
+ethos/signal.ethos + bootstrap_manifest
                     │
                     ▼
        verified Interface transaction
@@ -46,10 +46,10 @@ The ordinary and privileged Persona channels remain a pair:
 
 ## Code map
 
-- `ethos/interface.ethos` — canonical role-free Interface text.
+- `ethos/signal.ethos` — canonical role-free Interface text.
 - `src/bootstrap_manifest.rs` — explicit authority identity state.
 - `build.rs` — verified generation and `ethos-source-dir` publication.
-- `src/schema/lib/generated.rs` — checked encoded Rust Types projection.
+- `src/generated/signal.rs` — checked encoded Rust Types projection.
 - `src/schema/lib/behavior.rs` — handwritten lifecycle roles and wire behavior.
 - `tests/interface_contract.rs` — strict Interface/projection witness.
 - `tests/dependency_boundary.rs` — dependency and historical-surface fence.

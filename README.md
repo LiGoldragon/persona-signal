@@ -6,7 +6,7 @@ contract pair.
 
 The Interface carries component announcement, readiness and health queries,
 graceful stop, and the typed spawn envelope. Its canonical component-owned
-source is `ethos/interface.ethos`; its generated Rust Types use encoded
+source is `ethos/signal.ethos`; its generated Rust Types use encoded
 identities, while Dotos renders human-facing names. Lifecycle request/reply
 roles remain handwritten during the current bootstrap stage.
 

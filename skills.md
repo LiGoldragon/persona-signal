@@ -2,7 +2,7 @@
 
 Work from the encoded Interface transaction outward.
 
-- Edit `ethos/interface.ethos` for structural Type changes.
+- Edit `ethos/signal.ethos` for structural Type changes.
 - Mint and record new identities explicitly in `src/bootstrap_manifest.rs`.
 - Keep request/reply role behavior in `src/schema/lib/behavior.rs` during this
   bootstrap stage.
